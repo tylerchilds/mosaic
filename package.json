@@ -1,0 +1,18 @@
+{
+  "name": "re-grid",
+  "author": "Tyler Childs",
+  "contributors": [
+    "Tyler Childs <tchilds@inflection.com>"
+  ],
+  "description": "Re-grid is another grid system that addresses a couple large issues currently plaguing grid solutions including vertical alignment and fixed width columns.",
+  "homepage": "",
+  "version": "0.0.0",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-sass": "latest",
+    "gulp-minify-css": "latest",
+    "gulp-rename": "latest",
+    "gulp-clean": "latest",
+    "gulp-swig": "latest"
+  }
+}
