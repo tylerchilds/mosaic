@@ -30,7 +30,7 @@ gulp.task('sass', function() {
 // Build examples from templates
 gulp.task('swig', function(){
     gulp.src('src/html/**/*.html')
-        .pipe(swig(vars))
+        .pipe(swig())
         .pipe(gulp.dest('./dist'));
 });
 
@@ -39,7 +39,8 @@ gulp.task('swig', function(){
 gulp.task('clean', function() {
     gulp.src([
             'dist',
-            're-grid.css'
+            're-grid.css',
+            're-grid.min.css'
         ])
         .pipe(clean({force: true}));
 });

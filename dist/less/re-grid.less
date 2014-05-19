@@ -1,0 +1,102 @@
+.re-grid-row{
+  position: relative;
+  overflow: hidden;
+  clear: both;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /*
+    Setting the font-size to zero to remove the white-space from
+    the inline-block elements. It's important that any content 
+    inside a .re-grid-row be inside a .column element to reset
+    the font-size. More info about inline-block white-space here:
+    http://davidwalsh.name/remove-whitespace-inline-block
+  */
+  font-size: 0;
+
+  /* 
+    The ghost, nudged to maintain perfect centering
+    This found in the article:
+    http://css-tricks.com/centering-in-the-unknown/
+  */
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -1px; 
+  }
+
+  @media screen and (max-width: 767px){
+    &.collapse-767{
+      &:before {
+        content: none !important;
+      }
+      
+      .column{
+        display: block;
+        width: 100% !important;
+      }
+    }
+  }
+
+  @media screen and (max-width: 960px){
+    &.collapse-960{
+      &:before {
+        content: none !important;
+      }
+      
+      .column{
+        display: block;
+        width: 100% !important;
+      }
+    }
+  }
+
+  /* Left align column Content */
+  &.left,
+  .column.left{
+    text-align: left;
+  }
+
+  /* Center align column Content */
+  &.center,
+  .column.center{
+    text-align: center;
+  }
+
+  /* Right align section Content */
+  &.right,
+  .column.right{
+    text-align: right;
+  }
+
+  .column{
+    /*
+      This is where we're resetting the font-size to compensate for the inline-block white-space. If initial doesn't work
+      with whatever you're using, use a value that works with your css
+    */
+    font-size: initial;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+
+    /* Vertical Top */
+    &.middle {
+      vertical-align: top;
+    }
+
+    /* Vertical Middle */
+    &.middle {
+      vertical-align: middle;
+    }
+
+    /* Vertical Bottom */
+    &.bottom {
+      vertical-align: bottom;
+    }
+  }
+}
