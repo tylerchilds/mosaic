@@ -25,6 +25,22 @@ gulp.task('sass', function() {
         .pipe(rename('re-grid.min.css'))
         .pipe(gulp.dest('./dist/css'))
         .pipe(gulp.dest('./'));
+
+    gulp.src('src/scss/base.scss')
+        .pipe(sass())
+        .pipe(rename('base.css'))
+        .pipe(gulp.dest('./dist/css'))
+        .pipe(minify())
+        .pipe(rename('base.min.css'))
+        .pipe(gulp.dest('./dist/css'));
+
+    gulp.src('src/scss/examples.scss')
+        .pipe(sass())
+        .pipe(rename('examples.css'))
+        .pipe(gulp.dest('./dist/css'))
+        .pipe(minify())
+        .pipe(rename('examples.min.css'))
+        .pipe(gulp.dest('./dist/css'));
 });
 
 // Build examples from templates

@@ -76,7 +76,6 @@
       This is where we're resetting the font-size to compensate for the inline-block white-space. If initial doesn't work
       with whatever you're using, use a value that works with your css
     */
-    all: unset;
     font-size: initial;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
