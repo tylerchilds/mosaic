@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Re-grid | CSS Grid Framework with vertical centering and fixed columns</title>
+	
+	<link rel="stylesheet" href="css/re-grid.css">
+	
+</head>
+
+<body>
+	
+	<header>
+		<h1>Re-grid</h1>
+	</header>
+	<section>
+		
+  <div class="re-grid-row">
+    <div class="column span-4">
+      left top
+    </div>
+    <div class="column span-4 middle">
+      left middle
+    </div>
+    <div class="column span-4 bottom">
+      left bottom
+    </div>
+  </div>
+  <div class="re-grid-row center">
+    <div class="column span-4">
+      center top
+    </div>
+    <div class="column span-4 middle">
+      center middle
+    </div>
+    <div class="column span-4 bottom">
+      center bottom
+    </div>
+  </div>
+  <div class="re-grid-row right">
+    <div class="column span-4">
+      right top
+    </div>
+    <div class="column span-4 middle">
+      right middle
+    </div>
+    <div class="column span-4 bottom">
+      right bottom
+    </div>
+  </div>
+
+  <div class="re-grid-row">
+    <div class="column fixed-200">
+      .fixed-200
+    </div>
+    <div class="column left-200 span-6">
+      .span-6 shared using .left-200
+    </div>
+    <div class="column span-6">
+      .span-6
+    </div>
+  </div>
+
+  <div class="re-grid-row">
+    <div class="column fixed-100">
+      100px
+    </div>
+    <div class="column left-100 right-100 span-6">
+      .span-6 shared using .right-100 and .left-100
+    </div>
+    <div class="column fixed-100">
+      100px
+    </div>
+    <div class="column right-200 span-6">
+      .span-6 shared using .right-100
+    </div>
+    <div class="column fixed-200">
+      200px
+    </div>
+  </div>
+
+	</section>
+	<footer>
+		
+	</footer>
+	
+</body>
+</html>
