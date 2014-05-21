@@ -58,6 +58,7 @@
     box-sizing: border-box;
     display: inline-block;
     vertical-align: top;
+    position: relative;
     /* gutter width is 26px, 13px left and right of the column */
     padding: 13px;
     /* Vertical Top */
@@ -93,6 +94,8 @@
       width: 91.66667%; }
     .re-grid-row .column.span-12 {
       width: 100%; }
+    .re-grid-row .column[class*="fixed-"] {
+      z-index: 1; }
     .re-grid-row .column.fixed-50 {
       width: 50px; }
     .re-grid-row .column.fixed-100 {

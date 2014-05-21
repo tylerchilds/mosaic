@@ -86,6 +86,7 @@
     box-sizing: border-box;
     display: inline-block;
     vertical-align: top;
+    position: relative;
 
     /* gutter width is 26px, 13px left and right of the column */
     padding: 13px;
@@ -151,6 +152,10 @@
 
     &.span-12{
       width: (12px / 12px * 100%);
+    }
+
+    &[class*="fixed-"]{
+      z-index: 1;
     }
 
     &.fixed-50{
