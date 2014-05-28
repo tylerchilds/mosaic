@@ -1,3 +1,6 @@
+$gutter: 13px;
+$font-size: initial;
+
 .re-grid-row{
   position: relative;
   overflow: hidden;
@@ -80,7 +83,7 @@
       This is where we're resetting the font-size to compensate for the inline-block white-space. If initial doesn't work
       with whatever you're using, use a value that works with your css
     */
-    font-size: initial;
+    font-size: $font-size;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -89,7 +92,7 @@
     position: relative;
 
     /* gutter width is 26px, 13px left and right of the column */
-    padding: 13px;
+    padding: $gutter / 2;
 
     /* Vertical Top */
     &.middle {
@@ -106,53 +109,163 @@
       vertical-align: bottom;
     }
 
-    &.span-1{
-      width: (1px / 12px * 100%);
+    @for $i from 1 through 12 {
+      #cell#{$i} {
+        width: (#{$i}px  / 12px * 100%);
+      }
+
+      &.push-#{$i}{
+        margin-left: (#{$i}px / 12px * 100%);
+      }
+
+      &.pull-#{$i}{
+        margin-left: -(#{$i}px / 12px * 100%);
+      }
     }
 
-    &.span-2{
-      width: (2px / 12px * 100%);
-    }
+    // &.cell-1{
+    //   width: (1px / 12px * 100%);
+    // }
 
-    &.span-3{
-      width: (3px / 12px * 100%);
-    }
+    // &.cell-2{
+    //   width: (2px / 12px * 100%);
+    // }
 
-    &.span-4{
-      width: (4px / 12px * 100%);
-    }
+    // &.cell-3{
+    //   width: (3px / 12px * 100%);
+    // }
 
-    &.span-5{
-      width: (5px / 12px * 100%);
-    }
+    // &.cell-4{
+    //   width: (4px / 12px * 100%);
+    // }
 
-    &.span-6{
-      width: (6px / 12px * 100%);
-    }
+    // &.cell-5{
+    //   width: (5px / 12px * 100%);
+    // }
 
-    &.span-7{
-      width: (7px / 12px * 100%);
-    }
+    // &.cell-6{
+    //   width: (6px / 12px * 100%);
+    // }
 
-    &.span-8{
-      width: (8px / 12px * 100%);
-    }
+    // &.cell-7{
+    //   width: (7px / 12px * 100%);
+    // }
 
-    &.span-9{
-      width: (9px / 12px * 100%);
-    }
+    // &.cell-8{
+    //   width: (8px / 12px * 100%);
+    // }
 
-    &.span-10{
-      width: (10px / 12px * 100%);
-    }
+    // &.cell-9{
+    //   width: (9px / 12px * 100%);
+    // }
 
-    &.span-11{
-      width: (11px / 12px * 100%);
-    }
+    // &.cell-10{
+    //   width: (10px / 12px * 100%);
+    // }
 
-    &.span-12{
-      width: (12px / 12px * 100%);
-    }
+    // &.cell-11{
+    //   width: (11px / 12px * 100%);
+    // }
+
+    // &.cell-12{
+    //   width: (12px / 12px * 100%);
+    // }
+
+    // &.push-1{
+    //   margin-left: (1px / 12px * 100%);
+    // }
+
+    // &.push-2{
+    //   margin-left: (2px / 12px * 100%);
+    // }
+
+    // &.push-3{
+    //   margin-left: (3px / 12px * 100%);
+    // }
+
+    // &.push-4{
+    //   margin-left: (4px / 12px * 100%);
+    // }
+
+    // &.push-5{
+    //   margin-left: (5px / 12px * 100%);
+    // }
+
+    // &.push-6{
+    //   margin-left: (6px / 12px * 100%);
+    // }
+
+    // &.push-7{
+    //   margin-left: (7px / 12px * 100%);
+    // }
+
+    // &.push-8{
+    //   margin-left: (8px / 12px * 100%);
+    // }
+
+    // &.push-9{
+    //   margin-left: (9px / 12px * 100%);
+    // }
+
+    // &.push-10{
+    //   margin-left: (10px / 12px * 100%);
+    // }
+
+    // &.push-11{
+    //   margin-left: (11px / 12px * 100%);
+    // }
+
+    // &.push-12{
+    //   margin-left: (12px / 12px * 100%);
+    // }
+
+    // &.pull-1{
+    //   margin-left: -(1px / 12px * 100%);
+    // }
+
+    // &.pull-2{
+    //   margin-left: -(2px / 12px * 100%);
+    // }
+
+    // &.pull-3{
+    //   margin-left: -(3px / 12px * 100%);
+    // }
+
+    // &.pull-4{
+    //   margin-left: -(4px / 12px * 100%);
+    // }
+
+    // &.pull-5{
+    //   margin-left: -(5px / 12px * 100%);
+    // }
+
+    // &.pull-6{
+    //   margin-left: -(6px / 12px * 100%);
+    // }
+
+    // &.pull-7{
+    //   margin-left: -(7px / 12px * 100%);
+    // }
+
+    // &.pull-8{
+    //   margin-left: -(8px / 12px * 100%);
+    // }
+
+    // &.pull-9{
+    //   margin-left: -(9px / 12px * 100%);
+    // }
+
+    // &.pull-10{
+    //   margin-left: -(10px / 12px * 100%);
+    // }
+
+    // &.pull-11{
+    //   margin-left: -(11px / 12px * 100%);
+    // }
+
+    // &.pull-12{
+    //   margin-left: -(12px / 12px * 100%);
+    // }
 
     &[class*="fixed-"]{
       z-index: 1;

@@ -15,8 +15,8 @@ var swig = require('gulp-swig');
 gulp.task('sass', function() {
     gulp.src('src/scss/re-grid.scss')
         .pipe(gulp.dest('./dist/scss'))
-        .pipe(rename('re-grid.less'))
-        .pipe(gulp.dest('./dist/less'))
+        // .pipe(rename('re-grid.less'))
+        // .pipe(gulp.dest('./dist/less'))
         .pipe(sass())
         .pipe(rename('re-grid.css'))
         .pipe(gulp.dest('./dist/css'))

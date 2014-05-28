@@ -19,36 +19,48 @@
 	</header>
 	<section>
 		
+	<h2>Why another grid system?</h2>
+	<p>
+		Simple. All the other ones did the same thing which didn't accomplish the things they could have aspired to accomplish.
+	</p>
+	<h2>That's arrogant, what does it do?</h2>
+	<p>
+		Simple. This system differs from other grids in that it was built for vertical alignment and for mixed fluid and fixed columns. Yeah, fixed and fluid columns in the same row. Oh yeah, Vertical alignment just by adding <code>middle</code> as a class to a cell.
+	</p>
+	
+	<h3>Alignment Examples</h3>
+	<p>Cells can be horizontally aligned by adding the class "left", "center", or "right" on to the row</p>
+	<p>Cells can be vertically aligned by adding "top", "middle", or "bottom" to the cell. The horizontal alignment classes can also be applied to cells.</p>
   <div class="re-grid-row alignment-grid">
-    <div class="column span-4">
+    <div class="column cell-4">
       left top
     </div>
-    <div class="column span-4 middle">
+    <div class="column cell-4 middle">
       left middle
     </div>
-    <div class="column span-4 bottom">
+    <div class="column cell-4 bottom">
       left bottom
     </div>
   </div>
   <div class="re-grid-row alignment-grid center">
-    <div class="column span-4">
+    <div class="column cell-4">
       center top
     </div>
-    <div class="column span-4 middle">
+    <div class="column cell-4 middle">
       center middle
     </div>
-    <div class="column span-4 bottom">
+    <div class="column cell-4 bottom">
       center bottom
     </div>
   </div>
   <div class="re-grid-row alignment-grid right">
-    <div class="column span-4">
+    <div class="column cell-4">
       right top
     </div>
-    <div class="column span-4 middle">
+    <div class="column cell-4 middle">
       right middle
     </div>
-    <div class="column span-4 bottom">
+    <div class="column cell-4 bottom">
       right bottom
     </div>
   </div>
@@ -57,11 +69,11 @@
     <div class="column fixed-200">
       .fixed-200
     </div>
-    <div class="column left-200 span-6">
-      .span-6 shared using .left-200
+    <div class="column left-200 cell-6">
+      .cell-6 shared using .left-200
     </div>
-    <div class="column span-6">
-      .span-6
+    <div class="column cell-6">
+      .cell-6
     </div>
   </div>
 
@@ -69,14 +81,14 @@
     <div class="column fixed-100">
       100px
     </div>
-    <div class="column left-100 right-100 span-6">
-      .span-6 shared using .right-100 and .left-100
+    <div class="column left-100 right-100 cell-6">
+      .cell-6 shared using .right-100 and .left-100
     </div>
     <div class="column fixed-100">
       100px
     </div>
-    <div class="column right-200 span-6">
-      .span-6 shared using .right-200
+    <div class="column right-200 cell-6">
+      .cell-6 shared using .right-200
     </div>
     <div class="column fixed-200">
       200px

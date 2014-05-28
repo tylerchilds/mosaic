@@ -1,3 +1,7 @@
+$gutter: 13px;
+$font-size: initial;
+$fixed-multiple: 25;
+
 .re-grid-row{
   position: relative;
   overflow: hidden;
@@ -80,7 +84,7 @@
       This is where we're resetting the font-size to compensate for the inline-block white-space. If initial doesn't work
       with whatever you're using, use a value that works with your css
     */
-    font-size: initial;
+    font-size: $font-size;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -89,7 +93,7 @@
     position: relative;
 
     /* gutter width is 26px, 13px left and right of the column */
-    padding: 13px;
+    padding: $gutter / 2;
 
     /* Vertical Top */
     &.middle {
@@ -106,126 +110,54 @@
       vertical-align: bottom;
     }
 
-    &.span-1{
-      width: (1px / 12px * 100%);
+    // generate grid cells
+    @for $i from 1 through 12 {
+      &.cell-#{$i} {
+        width: ($i / 12 * 100%);
+      }
     }
 
-    &.span-2{
-      width: (2px / 12px * 100%);
+    // generate push offsets
+    @for $i from 1 through 12 {
+      &.push-#{$i}{
+        margin-left: ($i / 12 * 100%);
+      }
+    }
+  
+    // generate pull offsets
+    @for $i from 1 through 12 {
+      &.pull-#{$i}{
+        margin-left: -($i / 12 * 100%);
+      }
     }
 
-    &.span-3{
-      width: (3px / 12px * 100%);
-    }
 
-    &.span-4{
-      width: (4px / 12px * 100%);
-    }
-
-    &.span-5{
-      width: (5px / 12px * 100%);
-    }
-
-    &.span-6{
-      width: (6px / 12px * 100%);
-    }
-
-    &.span-7{
-      width: (7px / 12px * 100%);
-    }
-
-    &.span-8{
-      width: (8px / 12px * 100%);
-    }
-
-    &.span-9{
-      width: (9px / 12px * 100%);
-    }
-
-    &.span-10{
-      width: (10px / 12px * 100%);
-    }
-
-    &.span-11{
-      width: (11px / 12px * 100%);
-    }
-
-    &.span-12{
-      width: (12px / 12px * 100%);
-    }
-
+    /* These fixed columns need to display over any cell the overlap */
     &[class*="fixed-"]{
       z-index: 1;
     }
 
-    &.fixed-50{
-      width: 50px;
+    // generate fixed columns
+    @for $i from 1 through 16 {
+      &.fixed-#{$i * $fixed-multiple}{
+        width: ($i * $fixed-multiple)+px;
+      }
     }
 
-    &.fixed-100{
-      width: 100px;
+    // generate fixed left offsets
+    @for $i from 1 through 16 {
+      &.left-#{$i * $fixed-multiple}{
+        padding-left: ($i * $fixed-multiple)+px;
+        margin-left: -($i * $fixed-multiple)+px;
+      }
     }
 
-    &.fixed-200{
-      width: 200px;
-    }
-
-    &.fixed-300{
-      width: 300px;
-    }
-
-    &.fixed-400{
-      width: 400px;
-    }
-
-    &.left-50{
-      padding-left: 50px;
-      margin-left: -50px;
-    }
-
-    &.left-100{
-      padding-left: 100px;
-      margin-left: -100px;
-    }
-
-    &.left-200{
-      padding-left: 200px;
-      margin-left: -200px;
-    }
-
-    &.left-300{
-      padding-left: 300px;
-      margin-left: -300px;
-    }
-
-    &.left-400{
-      padding-left: 400px;
-      margin-left: -400px;
-    }
-
-    &.right-50{
-      padding-right: 50px;
-      margin-right: -50px;
-    }
-
-    &.right-100{
-      padding-right: 100px;
-      margin-right: -100px;
-    }
-
-    &.right-200{
-      padding-right: 200px;
-      margin-right: -200px;
-    }
-
-    &.right-300{
-      padding-right: 300px;
-      margin-right: -300px;
-    }
-
-    &.right-400{
-      padding-right: 400px;
-      margin-right: -400px;
+    // generate fixed right offsets
+    @for $i from 1 through 16 {
+      &.right-#{$i * $fixed-multiple}{
+        padding-right: ($i * $fixed-multiple)+px;
+        margin-right: -($i * $fixed-multiple)+px;
+      }
     }
   }
 }
