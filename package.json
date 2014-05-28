@@ -1,10 +1,10 @@
 {
-  "name": "re-grid",
+  "name": "mosaic",
   "author": "Tyler Childs",
   "contributors": [
     "Tyler Childs <tchilds@inflection.com>"
   ],
-  "description": "Re-grid is another grid system that addresses a couple large issues currently plaguing grid solutions including vertical alignment and fixed width columns.",
+  "description": "Mosaic is another grid system that addresses a couple large issues currently plaguing grid solutions including vertical alignment and fixed width columns.",
   "homepage": "",
   "version": "0.0.0",
   "devDependencies": {

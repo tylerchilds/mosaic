@@ -13,16 +13,14 @@ var swig = require('gulp-swig');
 
 // Compile Our Sass
 gulp.task('sass', function() {
-    gulp.src('src/scss/re-grid.scss')
+    gulp.src('src/scss/mosaic.scss')
         .pipe(gulp.dest('./dist/scss'))
-        // .pipe(rename('re-grid.less'))
-        // .pipe(gulp.dest('./dist/less'))
         .pipe(sass())
-        .pipe(rename('re-grid.css'))
+        .pipe(rename('mosaic.css'))
         .pipe(gulp.dest('./dist/css'))
         .pipe(gulp.dest('./'))
         .pipe(minify())
-        .pipe(rename('re-grid.min.css'))
+        .pipe(rename('mosaic.min.css'))
         .pipe(gulp.dest('./dist/css'))
         .pipe(gulp.dest('./'));
 
@@ -55,8 +53,8 @@ gulp.task('swig', function(){
 gulp.task('clean', function() {
     gulp.src([
             'dist',
-            're-grid.css',
-            're-grid.min.css'
+            'mosaic.css',
+            'mosaic.min.css'
         ])
         .pipe(clean({force: true}));
 });

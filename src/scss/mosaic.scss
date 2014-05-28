@@ -2,7 +2,7 @@ $gutter: 13px;
 $font-size: initial;
 $fixed-multiple: 25;
 
-.re-grid-row{
+.mosaic-row{
   position: relative;
   overflow: hidden;
   clear: both;
@@ -13,7 +13,7 @@ $fixed-multiple: 25;
   /*
     Setting the font-size to zero to remove the white-space from
     the inline-block elements. It's important that any content 
-    inside a .re-grid-row be inside a .column element to reset
+    inside a .mosaic-row be inside a .column element to reset
     the font-size. More info about inline-block white-space here:
     http://davidwalsh.name/remove-whitespace-inline-block
   */
@@ -37,7 +37,7 @@ $fixed-multiple: 25;
         content: none !important;
       }
       
-      .column{
+      .cell{
         display: block;
         width: 100% !important;
       }
@@ -50,7 +50,7 @@ $fixed-multiple: 25;
         content: none !important;
       }
       
-      .column{
+      .cell{
         display: block;
         width: 100% !important;
       }
@@ -59,27 +59,27 @@ $fixed-multiple: 25;
 
   /* Left align column Content */
   &.left,
-  .column.left{
+  .cell.left{
     text-align: left;
   }
 
   /* Center align column Content */
   &.center,
-  .column.center{
+  .cell.center{
     text-align: center;
   }
 
   /* Right align section Content */
   &.right,
-  .column.right{
+  .cell.right{
     text-align: right;
   }
 
-  &.no-gutter .column{
+  &.no-gutter .cell{
     padding: 0;
   }
 
-  .column{
+  .cell{
     /*
       This is where we're resetting the font-size to compensate for the inline-block white-space. If initial doesn't work
       with whatever you're using, use a value that works with your css
