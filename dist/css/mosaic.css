@@ -47,6 +47,8 @@
     text-align: right; }
   .mosaic-row.no-gutter .cell {
     padding: 0; }
+  .mosaic-row.reverse {
+    direction: rtl; }
   .mosaic-row .cell {
     /*
       This is where we're resetting the font-size to compensate for the inline-block white-space. If initial doesn't work
@@ -59,6 +61,7 @@
     display: inline-block;
     vertical-align: top;
     position: relative;
+    direction: ltr;
     /* gutter width is 26px, 13px left and right of the column */
     padding: 6.5px;
     /* Vertical Top */

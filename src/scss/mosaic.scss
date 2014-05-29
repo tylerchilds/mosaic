@@ -79,6 +79,10 @@ $fixed-multiple: 25;
     padding: 0;
   }
 
+  &.reverse{
+    direction: rtl;
+  }
+
   .cell{
     /*
       This is where we're resetting the font-size to compensate for the inline-block white-space. If initial doesn't work
@@ -91,6 +95,7 @@ $fixed-multiple: 25;
     display: inline-block;
     vertical-align: top;
     position: relative;
+    direction: ltr;
 
     /* gutter width is 26px, 13px left and right of the column */
     padding: $gutter / 2;
