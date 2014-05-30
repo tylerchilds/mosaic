@@ -34,15 +34,17 @@ table {
 @import url("http://fonts.googleapis.com/css?family=PT+Sans:400,700");
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,400,600,700,300");
 @import url("http://fonts.googleapis.com/css?family=PT+Mono");
+html {
+  font-size: 62.5%; }
+  @media screen and (min-width: 768px) {
+    html {
+      font-size: 75%; } }
+
 body {
   font-family: "Source Sans Pro", Verdana, Geneva, sans-serif;
   color: #3c3c3d;
-  font-size: 15px;
-  line-height: 21px; }
-  @media screen and (min-width: 768px) {
-    body {
-      font-size: 18px;
-      line-height: 24px; } }
+  font-size: 1.5rem;
+  line-height: 1.44; }
 
 h1, h2, h3 {
   font-family: "PT Sans", Futura, "Trebuchet MS", Arial, sans-serif;
@@ -54,12 +56,7 @@ pre, code, samp, kbd {
   background-color: #efeff0;
   border: 1px solid #dededf;
   border-radius: 2px;
-  font-size: 13px;
-  line-height: 19px; }
-  @media screen and (min-width: 768px) {
-    pre, code, samp, kbd {
-      font-size: 15px;
-      line-height: 21px; } }
+  font-size: 1.3rem; }
 
 code, samp, kbd {
   padding: 0 4px; }
@@ -73,7 +70,8 @@ pre {
     padding: 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  padding: 13px 0 21px; }
+  padding: 13px 0 21px;
+  line-height: 1.2; }
   @media screen and (min-width: 768px) {
     h1, h2, h3, h4, h5, h6 {
       padding-bottom: 21px 0 34px; } }
@@ -81,32 +79,25 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 0; }
 
 h1 {
-  font-size: 34px;
-  line-height: 38px;
-  line-height: 40px;
+  font-size: 3.4rem;
   font-weight: bold; }
 
 h2 {
-  font-size: 28px;
-  line-height: 32px; }
+  font-size: 2.8rem; }
 
 h3 {
-  font-size: 24px;
-  line-height: 28px; }
+  font-size: 2.4rem; }
 
 h4 {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 2rem;
   font-weight: bold; }
 
 h5 {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 2rem;
   font-weight: normal; }
 
 h6 {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 2rem;
   font-style: italic; }
 
 a:link {
@@ -190,12 +181,7 @@ figure {
     margin: 0 auto; }
 
 figcaption, small, sub, sup {
-  font-size: 13px;
-  line-height: 19px; }
-  @media screen and (min-width: 768px) {
-    figcaption, small, sub, sup {
-      font-size: 13px;
-      line-height: 19px; } }
+  font-size: 1.3rem; }
 
 caption, figcaption {
   text-align: center;

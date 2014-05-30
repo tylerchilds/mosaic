@@ -27,18 +27,6 @@
     display: inline-block;
     height: 100%;
     vertical-align: middle; }
-  @media screen and (max-width: 767px) {
-    .mosaic-row.collapse-767:before {
-      content: none !important; }
-    .mosaic-row.collapse-767 .cell {
-      display: block;
-      width: 100% !important; } }
-  @media screen and (max-width: 960px) {
-    .mosaic-row.collapse-960:before {
-      content: none !important; }
-    .mosaic-row.collapse-960 .cell {
-      display: block;
-      width: 100% !important; } }
   .mosaic-row.left, .mosaic-row .cell.left {
     text-align: left; }
   .mosaic-row.center, .mosaic-row .cell.center {
@@ -276,3 +264,27 @@
     .mosaic-row .cell.right-400 {
       padding-right: 400px;
       margin-right: -400px; }
+  @media screen and (max-width: 767px) {
+    .mosaic-row.stack-767:before {
+      content: none; }
+    .mosaic-row.stack-767 .cell {
+      display: block;
+      width: 100%; }
+    .mosaic-row.stack-767 .cell[class*="left-"] {
+      margin-left: 0;
+      padding-left: 0; }
+    .mosaic-row.stack-767 .cell[class*="right-"] {
+      margin-right: 0;
+      padding-right: 0; } }
+  @media screen and (max-width: 960px) {
+    .mosaic-row.stack-960:before {
+      content: none; }
+    .mosaic-row.stack-960 .cell {
+      display: block;
+      width: 100%; }
+    .mosaic-row.stack-960 .cell[class*="left-"] {
+      margin-left: 0;
+      padding-left: 0; }
+    .mosaic-row.stack-960 .cell[class*="right-"] {
+      margin-right: 0;
+      padding-right: 0; } }

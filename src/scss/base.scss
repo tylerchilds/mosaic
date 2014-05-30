@@ -1,5 +1,5 @@
-@import 'reset';
 @import 'variables';
+@import 'reset';
 
 @import url("http://fonts.googleapis.com/css?family=PT+Sans:400,700");
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,400,600,700,300");
@@ -9,16 +9,19 @@ $heading: "PT Sans", Futura, "Trebuchet MS", Arial, sans-serif;
 $body: "Source Sans Pro", Verdana, Geneva, sans-serif;
 $monospace: "PT Mono", monospace;
 
+html{
+	font-size: 62.5%;
+
+	@media screen and (min-width: 768px){
+		font-size: 75%;
+	}
+}
+
 body{
 	font-family: $body;
 	color: $gray1;
 	font-size: $font-size;
 	line-height: $line-height;
-
-	@media screen and (min-width: 768px){
-		font-size: $font-size + 3;
-		line-height: $line-height + 3;
-	}
 }
 
 h1, h2, h3{
@@ -35,13 +38,7 @@ kbd{
 	background-color: $gray6;
 	border: 1px solid $gray5;
 	border-radius: 2px;
-	font-size: $font-size - 2;
-	line-height: $line-height - 2;
-
-	@media screen and (min-width: 768px){
-		font-size: $font-size;
-		line-height: $line-height;
-	}
+	font-size: $font-size - .2;
 }
 
 code,
@@ -65,6 +62,7 @@ pre{
 
 h1, h2, h3, h4, h5, h6{
 	padding: 13px 0 21px;
+	line-height: 1.2;
 
 	@media screen and (min-width: 768px){
 		padding-bottom: 21px 0 34px;
@@ -76,37 +74,30 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1{
-	font-size: 34px;
-	line-height: 38px;
-	line-height: 40px;
+	font-size: 3.4rem;
 	font-weight: bold;
 }
 
 h2{
-	font-size: 28px;
-	line-height: 32px;
+	font-size: 2.8rem;
 }
 
 h3{
-	font-size: 24px;
-	line-height: 28px;
+	font-size: 2.4rem;
 }
 
 h4{
-	font-size: 20px;
-	line-height: 24px;
+	font-size: 2.0rem;
 	font-weight: bold;
 }
 
 h5{
-	font-size: 20px;
-	line-height: 24px;
+	font-size: 2.0rem;
 	font-weight: normal;
 }
 
 h6{
-	font-size: 20px;
-	line-height: 24px;
+	font-size: 2.0rem;
 	font-style: italic;
 }
 
@@ -229,13 +220,7 @@ figcaption,
 small,
 sub,
 sup{
-	font-size: $font-size - 2;
-	line-height: $line-height - 2;
-
-	@media screen and (min-width: 768px){
-		font-size: $font-size - 2;
-		line-height: $line-height - 2;
-	}
+	font-size: $font-size - .2;
 }
 
 caption,

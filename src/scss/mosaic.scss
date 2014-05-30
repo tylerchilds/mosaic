@@ -31,32 +31,6 @@ $fixed-multiple: 25;
     vertical-align: middle;
   }
 
-  @media screen and (max-width: 767px){
-    &.collapse-767{
-      &:before {
-        content: none !important;
-      }
-      
-      .cell{
-        display: block;
-        width: 100% !important;
-      }
-    }
-  }
-
-  @media screen and (max-width: 960px){
-    &.collapse-960{
-      &:before {
-        content: none !important;
-      }
-      
-      .cell{
-        display: block;
-        width: 100% !important;
-      }
-    }
-  }
-
   /* Left align column Content */
   &.left,
   .cell.left{
@@ -162,6 +136,52 @@ $fixed-multiple: 25;
       &.right-#{$i * $fixed-multiple}{
         padding-right: ($i * $fixed-multiple)+px;
         margin-right: -($i * $fixed-multiple)+px;
+      }
+    }
+  }
+
+   @media screen and (max-width: 767px){
+    &.stack-767{
+      &:before {
+        content: none;
+      }
+      
+      .cell{
+        display: block;
+        width: 100%;
+      }
+
+      .cell[class*="left-"]{
+        margin-left: 0;
+        padding-left: 0;
+      }
+
+      .cell[class*="right-"]{
+        margin-right: 0;
+        padding-right: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 960px){
+    &.stack-960{
+      &:before {
+        content: none;
+      }
+      
+      .cell{
+        display: block;
+        width: 100%;
+      }
+
+      .cell[class*="left-"]{
+        margin-left: 0;
+        padding-left: 0;
+      }
+
+      .cell[class*="right-"]{
+        margin-right: 0;
+        padding-right: 0;
       }
     }
   }

@@ -1,7 +1,18 @@
+$gray-dark: #454545;
+$gray-light: #E4E3E6;
+$gray-lightest: #EBEAED;
+
+$orange1: #ED9547;
+$orange2: #F2811D;
+
 .alignment-grid{
 	height: 200px;
 }
 
 .column{
 	background-color: #ccc;
+}
+
+.mosaic-row .cell{
+	font-size: 1.5rem;
 }
