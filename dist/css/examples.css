@@ -1,8 +1,11 @@
 .alignment-grid {
-  height: 200px; }
+  min-height: 200px; }
 
 .column {
   background-color: #ccc; }
 
 .mosaic-row .cell {
   font-size: 1.5rem; }
+
+.grid-system {
+  text-align: center; }

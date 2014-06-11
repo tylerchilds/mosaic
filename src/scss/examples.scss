@@ -6,7 +6,7 @@ $orange1: #ED9547;
 $orange2: #F2811D;
 
 .alignment-grid{
-	height: 200px;
+	min-height: 200px;
 }
 
 .column{
@@ -15,4 +15,8 @@ $orange2: #F2811D;
 
 .mosaic-row .cell{
 	font-size: 1.5rem;
+}
+
+.grid-system{
+	text-align: center;
 }

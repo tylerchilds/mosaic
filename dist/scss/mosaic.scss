@@ -1,6 +1,7 @@
 $gutter: 13px;
 $font-size: initial;
 $fixed-multiple: 25;
+$break-points: (480, 767, 960);
 
 .mosaic-row{
   position: relative;
@@ -20,8 +21,7 @@ $fixed-multiple: 25;
   font-size: 0;
 
   /* 
-    The ghost, nudged to maintain perfect centering
-    This found in the article:
+    The ghost, found in the article:
     http://css-tricks.com/centering-in-the-unknown/
   */
   &:before {
@@ -75,7 +75,7 @@ $fixed-multiple: 25;
     padding: $gutter / 2;
 
     /* Vertical Top */
-    &.middle {
+    &.top {
       vertical-align: top;
     }
 
@@ -110,78 +110,56 @@ $fixed-multiple: 25;
       }
     }
 
-
     /* These fixed columns need to display over any cell the overlap */
-    &[class*="fixed-"]{
+    &[class*="cell-fixed-"]{
       z-index: 1;
     }
 
     // generate fixed columns
     @for $i from 1 through 16 {
-      &.fixed-#{$i * $fixed-multiple}{
+      &.cell-fixed-#{$i * $fixed-multiple}{
         width: ($i * $fixed-multiple)+px;
       }
     }
 
-    // generate fixed left offsets
+    // generate shared left offsets
     @for $i from 1 through 16 {
-      &.left-#{$i * $fixed-multiple}{
+      &.share-left-#{$i * $fixed-multiple}{
         padding-left: ($i * $fixed-multiple)+px;
         margin-left: -($i * $fixed-multiple)+px;
       }
     }
 
-    // generate fixed right offsets
+    // generate shared right offsets
     @for $i from 1 through 16 {
-      &.right-#{$i * $fixed-multiple}{
+      &.shate-right-#{$i * $fixed-multiple}{
         padding-right: ($i * $fixed-multiple)+px;
         margin-right: -($i * $fixed-multiple)+px;
       }
     }
   }
 
-   @media screen and (max-width: 767px){
-    &.stack-767{
-      &:before {
-        content: none;
-      }
-      
-      .cell{
-        display: block;
-        width: 100%;
-      }
+  // create stacking thresholds
+  @each $threshold in $break-points{
+    @media screen and (max-width: ($threshold)+px){
+      &.stack-#{$threshold}{
+        &:before {
+          content: none;
+        }
+        
+        .cell{
+          width: 100%;
+        }
 
-      .cell[class*="left-"]{
-        margin-left: 0;
-        padding-left: 0;
-      }
+        .cell[class*="left-"]{
+          margin-left: 0;
+          padding-left: 0;
+        }
 
-      .cell[class*="right-"]{
-        margin-right: 0;
-        padding-right: 0;
-      }
-    }
-  }
-
-  @media screen and (max-width: 960px){
-    &.stack-960{
-      &:before {
-        content: none;
-      }
-      
-      .cell{
-        display: block;
-        width: 100%;
-      }
-
-      .cell[class*="left-"]{
-        margin-left: 0;
-        padding-left: 0;
-      }
-
-      .cell[class*="right-"]{
-        margin-right: 0;
-        padding-right: 0;
+        .cell[class*="right-"]{
+          margin-right: 0;
+          padding-right: 0;
+        }
       }
     }
   }
