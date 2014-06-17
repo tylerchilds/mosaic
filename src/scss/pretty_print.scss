@@ -7,7 +7,6 @@
   .example{
     padding: 40px 20px 20px 20px;
     position: relative;
-    background-color: $gray-lightest;
 
     &:before{
       content:"example";
@@ -25,6 +24,7 @@
     border-top:1px solid $gray-light;
     background-color:#272822;
     overflow: auto;
+    display: none;
 
     xmp{
       margin:0;
@@ -60,6 +60,25 @@
     }
     .typ{
       color: #fff;
+    }
+  }
+
+  .code-toggle{
+    padding: 8px;
+    text-align: center;
+    background-color: $gray-lightest;
+    cursor: pointer;
+
+    &:hover{
+      background-color: $gray-light;
+    }
+
+    &:before{
+      content: 'Show Code';
+    }
+
+    &.active:before{
+      content: 'Hide Code';
     }
   }
 }

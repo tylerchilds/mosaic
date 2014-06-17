@@ -30,11 +30,11 @@
     Start out with a <code>&lt;div class="mosaic-row"&gt;&lt;/div&gt;</code> and nest three children with <code>class="cell cell-4"</code>. The grid system is based on the classes <code>.cell-#</code> values, but you don't have to use the built-in grid. However, a width needs to be set on <code>.cell</code> elements.
   </p>
 
-    <section class="example-wrapper">
-      <section class="example"></section>
+  <section class="example-wrapper">
+    <section class="example"></section>
 
-      <section class="code">
-        <xmp class="prettyprint">
+    <section class="code">
+      <xmp class="prettyprint">
 <div class="mosaic-row">
   <div class="cell cell-4">
     First
@@ -46,26 +46,36 @@
     Last
   </div>
 </div>
-        </xmp>
-      </section>
+      </xmp>
     </section>
+    <aside class="code-toggle"></aside>
+  </section>
 
   <h3>Reverse row direction</h3>
   <p>
     To reverse a row, simply add <code>class="reverse"</code> to a <code>.mosaic-row</code>
   </p>
 
-  <div class="mosaic-row reverse">
-    <div class="cell cell-4">
-      First
-    </div>
-    <div class="cell cell-4">
-      Middle
-    </div>
-    <div class="cell cell-4">
-      Last
-    </div>
+  <section class="example-wrapper">
+    <section class="example"></section>
+
+    <section class="code">
+      <xmp class="prettyprint">
+<div class="mosaic-row reverse">
+  <div class="cell cell-4">
+    First
   </div>
+  <div class="cell cell-4">
+    Middle
+  </div>
+  <div class="cell cell-4">
+    Last
+  </div>
+</div>
+      </xmp>
+    </section>
+    <aside class="code-toggle"></aside>
+  </section>
 
 	<h3>Alignment Examples</h3>
 	<p>
@@ -74,52 +84,68 @@
 	<p>
     Cells can be vertically aligned by adding <code>.top</code>, <code>.middle</code>, or <code>.bottom</code> to the <code>.cell</code>. The horizontal alignment classes can also be applied to cells.
   </p>
-  <div class="mosaic-row alignment-grid">
-    <div class="cell cell-4 top">
-      left top
-    </div>
-    <div class="cell cell-4 middle">
-      left middle
-    </div>
-    <div class="cell cell-4 bottom">
-      left bottom
-    </div>
+
+  <section class="example-wrapper">
+    <section class="example"></section>
+
+    <section class="code">
+      <xmp class="prettyprint">
+<div class="mosaic-row alignment-grid">
+  <div class="cell cell-4 top">
+    left top
   </div>
-  <div class="mosaic-row alignment-grid center">
-    <div class="cell cell-4 top">
-      center top
-    </div>
-    <div class="cell cell-4 middle">
-      center middle
-    </div>
-    <div class="cell cell-4 bottom">
-      center bottom
-    </div>
+  <div class="cell cell-4 middle">
+    left middle
   </div>
-  <div class="mosaic-row alignment-grid right">
-    <div class="cell cell-4 top">
-      right top
-    </div>
-    <div class="cell cell-4 middle">
-      right middle
-    </div>
-    <div class="cell cell-4 bottom">
-      right bottom
-    </div>
+  <div class="cell cell-4 bottom">
+    left bottom
   </div>
+</div>
+<div class="mosaic-row alignment-grid center">
+  <div class="cell cell-4 top">
+    center top
+  </div>
+  <div class="cell cell-4 middle">
+    center middle
+  </div>
+  <div class="cell cell-4 bottom">
+    center bottom
+  </div>
+</div>
+<div class="mosaic-row alignment-grid right">
+  <div class="cell cell-4 top">
+    right top
+  </div>
+  <div class="cell cell-4 middle">
+    right middle
+  </div>
+  <div class="cell cell-4 bottom">
+    right bottom
+  </div>
+</div>
+      </xmp>
+    </section>
+    <aside class="code-toggle"></aside>
+  </section>
+
 
   <h3>The Fluid Grid</h3>
   <p>
     The fluid grid is a standard 12-column grid layout.
   </p>
+  <section class="example-wrapper">
+    <section class="example"></section>
+
+    <section class="code">
+      <xmp class="prettyprint">
   <section class="grid-system">
-    <div class="mosaic-row">
+    <div class="mosaic-row center">
       <div class="cell cell-12">
         12
       </div>
     </div>
 
-    <div class="mosaic-row">
+    <div class="mosaic-row center">
       <div class="cell cell-6">
         6
       </div>
@@ -128,7 +154,7 @@
       </div>
     </div>
 
-    <div class="mosaic-row">
+    <div class="mosaic-row center">
       <div class="cell cell-4">
         4
       </div>
@@ -140,7 +166,7 @@
       </div>
     </div>
 
-    <div class="mosaic-row">
+    <div class="mosaic-row center">
       <div class="cell cell-3">
         3
       </div>
@@ -155,7 +181,28 @@
       </div>
     </div>
 
-    <div class="mosaic-row">
+    <div class="mosaic-row center">
+      <div class="cell cell-2">
+        2
+      </div>
+      <div class="cell cell-2">
+        2
+      </div>
+      <div class="cell cell-2">
+        2
+      </div>
+      <div class="cell cell-2">
+        2
+      </div>
+      <div class="cell cell-2">
+        2
+      </div>
+      <div class="cell cell-2">
+        2
+      </div>
+    </div>
+
+    <div class="mosaic-row center">
       <div class="cell cell-1">
         1
       </div>
@@ -194,20 +241,38 @@
       </div>
     </div>
   </section>
+      </xmp>
+    </section>
+    <aside class="code-toggle"></aside>
+  </section>
 
 
-  <div class="mosaic-row">
-    <div class="cell cell-fixed-200">
-      .fixed-200
-    </div>
-    <div class="cell share-left-200 cell-6">
-      .cell-6 shared using .left-200
-    </div>
-    <div class="cell cell-6">
-      .cell-6
-    </div>
+  <section class="example-wrapper">
+    <section class="example"></section>
+
+    <section class="code">
+      <xmp class="prettyprint">
+<div class="mosaic-row">
+  <div class="cell cell-fixed-200">
+    .fixed-200
   </div>
+  <div class="cell share-left-200 cell-6">
+    .cell-6 shared using .left-200
+  </div>
+  <div class="cell cell-6">
+    .cell-6
+  </div>
+</div>
+      </xmp>
+    </section>
+    <aside class="code-toggle"></aside>
+  </section>
 
+  <section class="example-wrapper">
+    <section class="example"></section>
+
+    <section class="code">
+      <xmp class="prettyprint">
   <div class="mosaic-row">
     <div class="cell cell-fixed-100">
       100px
@@ -225,6 +290,10 @@
       200px
     </div>
   </div>
+      </xmp>
+    </section>
+    <aside class="code-toggle"></aside>
+  </section>
 
 		</article>
 		<nav class="cell cell-fixed-200">

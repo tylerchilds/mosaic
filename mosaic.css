@@ -8,13 +8,13 @@
   box-sizing: border-box;
   /*
     Setting the font-size to zero to remove the white-space from
-    the inline-block elements. It's important that any content 
+    the inline-block elements. It's important that any content
     inside a .mosaic-row be inside a .column element to reset
     the font-size. More info about inline-block white-space here:
     http://davidwalsh.name/remove-whitespace-inline-block
   */
   font-size: 0;
-  /* 
+  /*
     The ghost, found in the article:
     http://css-tricks.com/centering-in-the-unknown/
   */
@@ -215,52 +215,52 @@
     .mosaic-row .cell.share-left-400 {
       padding-left: 400px;
       margin-left: -400px; }
-    .mosaic-row .cell.shate-right-25 {
+    .mosaic-row .cell.share-right-25 {
       padding-right: 25px;
       margin-right: -25px; }
-    .mosaic-row .cell.shate-right-50 {
+    .mosaic-row .cell.share-right-50 {
       padding-right: 50px;
       margin-right: -50px; }
-    .mosaic-row .cell.shate-right-75 {
+    .mosaic-row .cell.share-right-75 {
       padding-right: 75px;
       margin-right: -75px; }
-    .mosaic-row .cell.shate-right-100 {
+    .mosaic-row .cell.share-right-100 {
       padding-right: 100px;
       margin-right: -100px; }
-    .mosaic-row .cell.shate-right-125 {
+    .mosaic-row .cell.share-right-125 {
       padding-right: 125px;
       margin-right: -125px; }
-    .mosaic-row .cell.shate-right-150 {
+    .mosaic-row .cell.share-right-150 {
       padding-right: 150px;
       margin-right: -150px; }
-    .mosaic-row .cell.shate-right-175 {
+    .mosaic-row .cell.share-right-175 {
       padding-right: 175px;
       margin-right: -175px; }
-    .mosaic-row .cell.shate-right-200 {
+    .mosaic-row .cell.share-right-200 {
       padding-right: 200px;
       margin-right: -200px; }
-    .mosaic-row .cell.shate-right-225 {
+    .mosaic-row .cell.share-right-225 {
       padding-right: 225px;
       margin-right: -225px; }
-    .mosaic-row .cell.shate-right-250 {
+    .mosaic-row .cell.share-right-250 {
       padding-right: 250px;
       margin-right: -250px; }
-    .mosaic-row .cell.shate-right-275 {
+    .mosaic-row .cell.share-right-275 {
       padding-right: 275px;
       margin-right: -275px; }
-    .mosaic-row .cell.shate-right-300 {
+    .mosaic-row .cell.share-right-300 {
       padding-right: 300px;
       margin-right: -300px; }
-    .mosaic-row .cell.shate-right-325 {
+    .mosaic-row .cell.share-right-325 {
       padding-right: 325px;
       margin-right: -325px; }
-    .mosaic-row .cell.shate-right-350 {
+    .mosaic-row .cell.share-right-350 {
       padding-right: 350px;
       margin-right: -350px; }
-    .mosaic-row .cell.shate-right-375 {
+    .mosaic-row .cell.share-right-375 {
       padding-right: 375px;
       margin-right: -375px; }
-    .mosaic-row .cell.shate-right-400 {
+    .mosaic-row .cell.share-right-400 {
       padding-right: 400px;
       margin-right: -400px; }
   @media screen and (max-width: 480px) {

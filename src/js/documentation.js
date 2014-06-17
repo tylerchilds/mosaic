@@ -8,4 +8,12 @@ $(function(){
     }
   });
 
+  $(document).on('click', '.code-toggle', function(){
+    $(this)
+      .toggleClass('active')
+      .prev()
+        .slideToggle(200);
+
+  });
+
 });

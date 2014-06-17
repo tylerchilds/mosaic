@@ -1,12 +1,11 @@
 .example-wrapper {
-  border: 1px solid #E4E3E6;
+  border: 1px solid #edeeee;
   border-radius: 5px;
   margin-bottom: 10px;
   overflow: visible; }
   .example-wrapper .example {
     padding: 40px 20px 20px 20px;
-    position: relative;
-    background-color: #EBEAED; }
+    position: relative; }
     .example-wrapper .example:before {
       content: "example";
       text-transform: uppercase;
@@ -17,9 +16,10 @@
       top: 10px; }
   .example-wrapper .code {
     padding: 0px 20px;
-    border-top: 1px solid #E4E3E6;
+    border-top: 1px solid #edeeee;
     background-color: #272822;
-    overflow: auto; }
+    overflow: auto;
+    display: none; }
     .example-wrapper .code xmp {
       margin: 0; }
     .example-wrapper .code .pln {
@@ -33,16 +33,27 @@
     .example-wrapper .code .atn {
       color: #a6da2a; }
     .example-wrapper .code .com {
-      color: #454545; }
+      color: #343838; }
     .example-wrapper .code .pun {
       color: #fff; }
     .example-wrapper .code .kwd {
       color: #79cdcd; }
     .example-wrapper .code .typ {
       color: #fff; }
+  .example-wrapper .code-toggle {
+    padding: 8px;
+    text-align: center;
+    background-color: #f5f6f6;
+    cursor: pointer; }
+    .example-wrapper .code-toggle:hover {
+      background-color: #edeeee; }
+    .example-wrapper .code-toggle:before {
+      content: 'Show Code'; }
+    .example-wrapper .code-toggle.active:before {
+      content: 'Hide Code'; }
 
 .alignment-grid {
-  min-height: 200px; }
+  height: 200px; }
 
 .column {
   background-color: #ccc; }
@@ -52,3 +63,6 @@
 
 .grid-system {
   text-align: center; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #008C9E; }

@@ -1,14 +1,16 @@
-$gray-dark: #454545;
-$gray-light: #E4E3E6;
-$gray-lightest: #EBEAED;
+$gray-dark: #343838;
+$gray-light: lighten($gray-dark, 72%);
+$gray-lightest: lighten($gray-dark, 75%);
 
-$orange1: #ED9547;
-$orange2: #F2811D;
+$blue-dark: #005F6B;
+$blue-med: #008C9E;
+$blue-light: #00B4CC;
+$blue-neon: #00DFFC;
 
 @import 'pretty_print';
 
 .alignment-grid{
-	min-height: 200px;
+	height: 200px;
 }
 
 .column{
@@ -21,4 +23,8 @@ $orange2: #F2811D;
 
 .grid-system{
 	text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: $blue-med;
 }

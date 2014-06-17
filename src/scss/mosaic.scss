@@ -13,14 +13,14 @@ $break-points: (480, 767, 960);
   box-sizing: border-box;
   /*
     Setting the font-size to zero to remove the white-space from
-    the inline-block elements. It's important that any content 
+    the inline-block elements. It's important that any content
     inside a .mosaic-row be inside a .column element to reset
     the font-size. More info about inline-block white-space here:
     http://davidwalsh.name/remove-whitespace-inline-block
   */
   font-size: 0;
 
-  /* 
+  /*
     The ghost, found in the article:
     http://css-tricks.com/centering-in-the-unknown/
   */
@@ -102,7 +102,7 @@ $break-points: (480, 767, 960);
         margin-left: ($i / 12 * 100%);
       }
     }
-  
+
     // generate pull offsets
     @for $i from 1 through 12 {
       &.pull-#{$i}{
@@ -132,7 +132,7 @@ $break-points: (480, 767, 960);
 
     // generate shared right offsets
     @for $i from 1 through 16 {
-      &.shate-right-#{$i * $fixed-multiple}{
+      &.share-right-#{$i * $fixed-multiple}{
         padding-right: ($i * $fixed-multiple)+px;
         margin-right: -($i * $fixed-multiple)+px;
       }
@@ -146,7 +146,7 @@ $break-points: (480, 767, 960);
         &:before {
           content: none;
         }
-        
+
         .cell{
           width: 100%;
         }
