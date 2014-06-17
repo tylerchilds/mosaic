@@ -22,7 +22,7 @@
 			
 	<h2>Why another grid system?</h2>
 	<p>
-		Two reasons: Simple vertical alignment is pretty useful in a grid and no other framework allows for mixed fixed/fluid columns in the same rows. The initial concept spawned from <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/" target="_blank">The Media Object</a> and the grid grew out of necessity because the cells needed fixed width to be vertically centered.
+		Two reasons: Simple vertical alignment is pretty useful in a grid and no other framework allows for mixed fixed/fluid columns in the same rows. The initial concept spawned from <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/" target="_blank">The Media Object</a> and the grid grew out of necessity because the cells needed fixed widths to be vertically centered.
 	</p>
 
   <h3>Basic fluid, three column layout</h3>
@@ -30,23 +30,31 @@
     Start out with a <code>&lt;div class="mosaic-row"&gt;&lt;/div&gt;</code> and nest three children with <code>class="cell cell-4"</code>. The grid system is based on the classes <code>.cell-#</code> values, but you don't have to use the built-in grid. However, a width needs to be set on <code>.cell</code> elements.
   </p>
 
-  <div class="mosaic-row">
-    <div class="cell cell-4">
-      First
-    </div>
-    <div class="cell cell-4">
-      Middle
-    </div>
-    <div class="cell cell-4">
-      Last
-    </div>
+    <section class="example-wrapper">
+      <section class="example"></section>
+
+      <section class="code">
+        <xmp class="prettyprint">
+<div class="mosaic-row">
+  <div class="cell cell-4">
+    First
   </div>
+  <div class="cell cell-4">
+    Middle
+  </div>
+  <div class="cell cell-4">
+    Last
+  </div>
+</div>
+        </xmp>
+      </section>
+    </section>
 
   <h3>Reverse row direction</h3>
   <p>
     To reverse a row, simply add <code>class="reverse"</code> to a <code>.mosaic-row</code>
   </p>
-	
+
   <div class="mosaic-row reverse">
     <div class="cell cell-4">
       First
@@ -224,8 +232,12 @@
 		</nav>
 	</section>
 	<footer>
-		
+
 	</footer>
+	
+	
+	 <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=html"></script>
+	 <script src="js/documentation.min.js"></script>
 	
 </body>
 </html>

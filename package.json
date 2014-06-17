@@ -13,6 +13,8 @@
     "gulp-minify-css": "latest",
     "gulp-rename": "latest",
     "gulp-clean": "latest",
-    "gulp-swig": "latest"
+    "gulp-swig": "latest",
+    "gulp-concat": "latest",
+    "gulp-uglify": "latest"
   }
 }

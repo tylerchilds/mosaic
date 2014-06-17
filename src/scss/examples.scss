@@ -5,6 +5,8 @@ $gray-lightest: #EBEAED;
 $orange1: #ED9547;
 $orange2: #F2811D;
 
+@import 'pretty_print';
+
 .alignment-grid{
 	min-height: 200px;
 }
