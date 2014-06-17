@@ -266,33 +266,33 @@
   @media screen and (max-width: 480px) {
     .mosaic-row.stack-480:before {
       content: none; }
-    .mosaic-row.stack-480 .cell {
+    .mosaic-row.stack-480 > .cell {
       width: 100%; }
-    .mosaic-row.stack-480 .cell[class*="left-"] {
+    .mosaic-row.stack-480 > .cell[class*="left-"] {
       margin-left: 0;
       padding-left: 0; }
-    .mosaic-row.stack-480 .cell[class*="right-"] {
+    .mosaic-row.stack-480 > .cell[class*="right-"] {
       margin-right: 0;
       padding-right: 0; } }
   @media screen and (max-width: 767px) {
     .mosaic-row.stack-767:before {
       content: none; }
-    .mosaic-row.stack-767 .cell {
+    .mosaic-row.stack-767 > .cell {
       width: 100%; }
-    .mosaic-row.stack-767 .cell[class*="left-"] {
+    .mosaic-row.stack-767 > .cell[class*="left-"] {
       margin-left: 0;
       padding-left: 0; }
-    .mosaic-row.stack-767 .cell[class*="right-"] {
+    .mosaic-row.stack-767 > .cell[class*="right-"] {
       margin-right: 0;
       padding-right: 0; } }
   @media screen and (max-width: 960px) {
     .mosaic-row.stack-960:before {
       content: none; }
-    .mosaic-row.stack-960 .cell {
+    .mosaic-row.stack-960 > .cell {
       width: 100%; }
-    .mosaic-row.stack-960 .cell[class*="left-"] {
+    .mosaic-row.stack-960 > .cell[class*="left-"] {
       margin-left: 0;
       padding-left: 0; }
-    .mosaic-row.stack-960 .cell[class*="right-"] {
+    .mosaic-row.stack-960 > .cell[class*="right-"] {
       margin-right: 0;
       padding-right: 0; } }

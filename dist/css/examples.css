@@ -52,14 +52,75 @@
     .example-wrapper .code-toggle.active:before {
       content: 'Hide Code'; }
 
+header {
+  background-color: #005F6B;
+  padding: 8px; }
+  @media screen and (min-width: 768px) {
+    header {
+      padding: 8px 13px; } }
+  header h1 {
+    color: #fff;
+    font-weight: normal;
+    font-size: 3rem;
+    padding-bottom: 0; }
+    header h1 small {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+
+.hero {
+  height: 300px;
+  background: url('http://fillmurray.com/g/1100/300') no-repeat center center;
+  background-size: cover;
+  position: relative; }
+  .hero:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.9);
+    content: ''; }
+  .hero * {
+    position: relative;
+    z-index: 2;
+    color: #fff; }
+  .hero p {
+    font-size: 1.8rem; }
+  .hero .fill-link {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: #edeeee;
+    font-size: 1.2rem;
+    opacity: 0.5; }
+    .hero .fill-link:hover {
+      opacity: 0.75; }
+
+main {
+  padding: 34px 13px; }
+  @media screen and (min-width: 768px) {
+    main {
+      padding: 55px 34px; } }
+
 .alignment-grid {
-  height: 200px; }
+  height: 100px; }
 
 .column {
   background-color: #ccc; }
 
 .mosaic-row .cell {
   font-size: 1.5rem; }
+
+.example .cell {
+  color: #fff;
+  background-color: #00B4CC; }
+  .example .cell:nth-child(even) {
+    background-color: #008C9E; }
+
+code {
+  color: #008C9E; }
 
 .grid-system {
   text-align: center; }

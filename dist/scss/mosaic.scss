@@ -147,16 +147,16 @@ $break-points: (480, 767, 960);
           content: none;
         }
 
-        .cell{
+        & > .cell{
           width: 100%;
         }
 
-        .cell[class*="left-"]{
+        & > .cell[class*="left-"]{
           margin-left: 0;
           padding-left: 0;
         }
 
-        .cell[class*="right-"]{
+        & > .cell[class*="right-"]{
           margin-right: 0;
           padding-right: 0;
         }

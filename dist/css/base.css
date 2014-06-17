@@ -34,6 +34,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+* {
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 html {
   font-size: 62.5%; }
   @media screen and (min-width: 768px) {

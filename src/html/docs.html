@@ -1,14 +1,21 @@
 {% extends '../templates/default.html' %}
 
-{% block content %}
-	<h2>Why another grid system?</h2>
-	<p>
-		Two reasons: Simple vertical alignment is pretty useful in a grid and no other framework allows for mixed fixed/fluid columns in the same rows. The initial concept spawned from <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/" target="_blank">The Media Object</a> and the grid grew out of necessity because the cells needed fixed widths to be vertically centered.
-	</p>
+{% block hero %}
+<div class="mosaic-row center hero">
+  <div class="cell cell-12 middle">
+    <h2>A better reason to grid!</h2>
+    <p>
+      Mosaic is a 12-column Pure CSS Grid System for vertical alignment and mixed fluid/fixed column widths
+    </p>
+  </div>
+  <a href="http://www.fillmurray.com/" class="fill-link" target="_blank">Images from fillmurray.com</a>
+</div>
+{% endblock %}
 
+{% block content %}
   <h3>Basic fluid, three column layout</h3>
   <p>
-    Start out with a <code>&lt;div class="mosaic-row"&gt;&lt;/div&gt;</code> and nest three children with <code>class="cell cell-4"</code>. The grid system is based on the classes <code>.cell-#</code> values, but you don't have to use the built-in grid. However, a width needs to be set on <code>.cell</code> elements.
+    Start out with a <code>&lt;div class="mosaic-row"&gt;&lt;/div&gt;</code> and nest three children with <code>class="cell cell-4"</code>. The grid system is based on the classes <code>.cell-#</code> values, but you don't have to use the built-in grid. However, a width needs to be set on <code>.cell</code> elements for the alignment properties to apply.
   </p>
 
   <section class="example-wrapper">
@@ -60,10 +67,10 @@
 
 	<h3>Alignment Examples</h3>
 	<p>
-    Cells can be horizontally aligned by adding <code>.left</code>, <code>center</code>, or <code>right</code> on to a <code>.mosaic-row</code>
+    Cells can be horizontally aligned by adding <code>.left</code>, <code>.center</code>, or <code>.right</code> on to a <code>.mosaic-row</code>
   </p>
 	<p>
-    Cells can be vertically aligned by adding <code>.top</code>, <code>.middle</code>, or <code>.bottom</code> to the <code>.cell</code>. The horizontal alignment classes can also be applied to cells.
+    Cells can be vertically aligned by adding <code>.top</code>, <code>.middle</code>, or <code>.bottom</code> to a <code>.cell</code>. The horizontal alignment classes can also be applied to a <code>.cell</code>.
   </p>
 
   <section class="example-wrapper">
@@ -235,13 +242,13 @@
       <xmp class="prettyprint">
 <div class="mosaic-row">
   <div class="cell cell-fixed-200">
-    .fixed-200
+    fixed
   </div>
   <div class="cell share-left-200 cell-6">
-    .cell-6 shared using .left-200
+    &lt;- 50% shared
   </div>
   <div class="cell cell-6">
-    .cell-6
+    50%
   </div>
 </div>
       </xmp>
@@ -256,19 +263,19 @@
       <xmp class="prettyprint">
   <div class="mosaic-row">
     <div class="cell cell-fixed-100">
-      100px
+      fixed
     </div>
-    <div class="cell share-left-100 right-100 cell-6">
-      .cell-6 shared using .right-100 and .left-100
+    <div class="cell share-left-100 share-right-100 cell-6">
+      &lt;- 50% shared -&gt;
     </div>
     <div class="cell cell-fixed-100">
-      100px
+      fixed
     </div>
     <div class="cell share-right-200 cell-6">
-      .cell-6 shared using .right-200
+      50% shared -&gt;
     </div>
-    <div class="cell fixed-200">
-      200px
+    <div class="cell cell-fixed-200">
+      fixed
     </div>
   </div>
       </xmp>

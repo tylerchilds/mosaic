@@ -15,16 +15,20 @@
 <body>
 	{% block page %}
 	<header>
-		<h1>Mosaic</h1>
+		<h1>Mosaic <small>Grid Framework</small></h1>
 	</header>
-	<section class="mosaic-row reverse stack-767">
-		<article class="cell cell-12 share-left-200">
-			{% block content %}{% endblock %}
-		</article>
-		<nav class="cell cell-fixed-200">
-			Nav
-		</nav>
-	</section>
+	{% block hero %}
+	{% endblock %}
+	<main>
+		<section class="mosaic-row stack-767">
+			<nav class="cell cell-fixed-200">
+				Nav
+			</nav>
+			<article class="cell cell-12 share-left-200">
+				{% block content %}{% endblock %}
+			</article>
+		</section>
+	</main>
 	<footer>
 
 	</footer>

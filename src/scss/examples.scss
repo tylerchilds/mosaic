@@ -9,8 +9,79 @@ $blue-neon: #00DFFC;
 
 @import 'pretty_print';
 
+header{
+  background-color: $blue-dark;
+  padding: 8px;
+
+  @media screen and (min-width: 768px){
+    padding: 8px 13px;
+  }
+
+  h1{
+    color: #fff;
+    font-weight: normal;
+    font-size: 3rem;
+    padding-bottom: 0;
+
+    small{
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+.hero{
+  height: 300px;
+  background: url('http://fillmurray.com/g/1100/300') no-repeat center center;
+  background-size: cover;
+  position: relative;
+
+  &:after{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(0,0,0,.9);
+    content: '';
+  }
+
+  *{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+  }
+
+  p{
+    font-size: 1.8rem;
+  }
+
+  .fill-link{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: $gray-light;
+    font-size: 1.2rem;
+    opacity: .5;
+
+    &:hover{
+      opacity: .75;
+    }
+  }
+}
+
+main{
+  padding: 34px 13px;
+
+  @media screen and (min-width: 768px){
+    padding: 55px 34px;
+  }
+}
+
 .alignment-grid{
-	height: 200px;
+	height: 100px;
 }
 
 .column{
@@ -19,6 +90,21 @@ $blue-neon: #00DFFC;
 
 .mosaic-row .cell{
 	font-size: 1.5rem;
+}
+
+.example{
+  .cell{
+    color: #fff;
+    background-color: $blue-light;
+
+    &:nth-child(even){
+      background-color: $blue-med;
+    }
+  }
+}
+
+code{
+  color: $blue-med;
 }
 
 .grid-system{

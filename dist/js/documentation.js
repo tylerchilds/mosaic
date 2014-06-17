@@ -9204,7 +9204,6 @@ $(function(){
       .toggleClass('active')
       .prev()
         .slideToggle(200);
-
   });
 
 });

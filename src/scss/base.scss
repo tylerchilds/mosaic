@@ -9,6 +9,12 @@ $heading: "PT Sans", Futura, "Trebuchet MS", Arial, sans-serif;
 $body: "Source Sans Pro", Verdana, Geneva, sans-serif;
 $monospace: "PT Mono", monospace;
 
+*{
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 html{
 	font-size: 62.5%;
 
