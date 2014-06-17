@@ -133,166 +133,163 @@
       margin-left: -91.66667%; }
     .mosaic-row .cell.pull-12 {
       margin-left: -100%; }
-    .mosaic-row .cell[class*="cell-fixed-"] {
+    .mosaic-row .cell[class*="fixed-"] {
       z-index: 1; }
-    .mosaic-row .cell.cell-fixed-25 {
+    .mosaic-row .cell.fixed-25 {
       width: 25px; }
-    .mosaic-row .cell.cell-fixed-50 {
+    .mosaic-row .cell.fixed-50 {
       width: 50px; }
-    .mosaic-row .cell.cell-fixed-75 {
+    .mosaic-row .cell.fixed-75 {
       width: 75px; }
-    .mosaic-row .cell.cell-fixed-100 {
+    .mosaic-row .cell.fixed-100 {
       width: 100px; }
-    .mosaic-row .cell.cell-fixed-125 {
+    .mosaic-row .cell.fixed-125 {
       width: 125px; }
-    .mosaic-row .cell.cell-fixed-150 {
+    .mosaic-row .cell.fixed-150 {
       width: 150px; }
-    .mosaic-row .cell.cell-fixed-175 {
+    .mosaic-row .cell.fixed-175 {
       width: 175px; }
-    .mosaic-row .cell.cell-fixed-200 {
+    .mosaic-row .cell.fixed-200 {
       width: 200px; }
-    .mosaic-row .cell.cell-fixed-225 {
+    .mosaic-row .cell.fixed-225 {
       width: 225px; }
-    .mosaic-row .cell.cell-fixed-250 {
+    .mosaic-row .cell.fixed-250 {
       width: 250px; }
-    .mosaic-row .cell.cell-fixed-275 {
+    .mosaic-row .cell.fixed-275 {
       width: 275px; }
-    .mosaic-row .cell.cell-fixed-300 {
+    .mosaic-row .cell.fixed-300 {
       width: 300px; }
-    .mosaic-row .cell.cell-fixed-325 {
+    .mosaic-row .cell.fixed-325 {
       width: 325px; }
-    .mosaic-row .cell.cell-fixed-350 {
+    .mosaic-row .cell.fixed-350 {
       width: 350px; }
-    .mosaic-row .cell.cell-fixed-375 {
+    .mosaic-row .cell.fixed-375 {
       width: 375px; }
-    .mosaic-row .cell.cell-fixed-400 {
+    .mosaic-row .cell.fixed-400 {
       width: 400px; }
-    .mosaic-row .cell.share-left-25 {
-      padding-left: 25px;
+    .mosaic-row .cell.contain-25-left {
+      padding-left: 31.5px;
       margin-left: -25px; }
-    .mosaic-row .cell.share-left-50 {
-      padding-left: 50px;
+    .mosaic-row .cell.contain-50-left {
+      padding-left: 56.5px;
       margin-left: -50px; }
-    .mosaic-row .cell.share-left-75 {
-      padding-left: 75px;
+    .mosaic-row .cell.contain-75-left {
+      padding-left: 81.5px;
       margin-left: -75px; }
-    .mosaic-row .cell.share-left-100 {
-      padding-left: 100px;
+    .mosaic-row .cell.contain-100-left {
+      padding-left: 106.5px;
       margin-left: -100px; }
-    .mosaic-row .cell.share-left-125 {
-      padding-left: 125px;
+    .mosaic-row .cell.contain-125-left {
+      padding-left: 131.5px;
       margin-left: -125px; }
-    .mosaic-row .cell.share-left-150 {
-      padding-left: 150px;
+    .mosaic-row .cell.contain-150-left {
+      padding-left: 156.5px;
       margin-left: -150px; }
-    .mosaic-row .cell.share-left-175 {
-      padding-left: 175px;
+    .mosaic-row .cell.contain-175-left {
+      padding-left: 181.5px;
       margin-left: -175px; }
-    .mosaic-row .cell.share-left-200 {
-      padding-left: 200px;
+    .mosaic-row .cell.contain-200-left {
+      padding-left: 206.5px;
       margin-left: -200px; }
-    .mosaic-row .cell.share-left-225 {
-      padding-left: 225px;
+    .mosaic-row .cell.contain-225-left {
+      padding-left: 231.5px;
       margin-left: -225px; }
-    .mosaic-row .cell.share-left-250 {
-      padding-left: 250px;
+    .mosaic-row .cell.contain-250-left {
+      padding-left: 256.5px;
       margin-left: -250px; }
-    .mosaic-row .cell.share-left-275 {
-      padding-left: 275px;
+    .mosaic-row .cell.contain-275-left {
+      padding-left: 281.5px;
       margin-left: -275px; }
-    .mosaic-row .cell.share-left-300 {
-      padding-left: 300px;
+    .mosaic-row .cell.contain-300-left {
+      padding-left: 306.5px;
       margin-left: -300px; }
-    .mosaic-row .cell.share-left-325 {
-      padding-left: 325px;
+    .mosaic-row .cell.contain-325-left {
+      padding-left: 331.5px;
       margin-left: -325px; }
-    .mosaic-row .cell.share-left-350 {
-      padding-left: 350px;
+    .mosaic-row .cell.contain-350-left {
+      padding-left: 356.5px;
       margin-left: -350px; }
-    .mosaic-row .cell.share-left-375 {
-      padding-left: 375px;
+    .mosaic-row .cell.contain-375-left {
+      padding-left: 381.5px;
       margin-left: -375px; }
-    .mosaic-row .cell.share-left-400 {
-      padding-left: 400px;
+    .mosaic-row .cell.contain-400-left {
+      padding-left: 406.5px;
       margin-left: -400px; }
-    .mosaic-row .cell.share-right-25 {
-      padding-right: 25px;
+    .mosaic-row .cell.contain-25-right {
+      padding-right: 31.5px;
       margin-right: -25px; }
-    .mosaic-row .cell.share-right-50 {
-      padding-right: 50px;
+    .mosaic-row .cell.contain-50-right {
+      padding-right: 56.5px;
       margin-right: -50px; }
-    .mosaic-row .cell.share-right-75 {
-      padding-right: 75px;
+    .mosaic-row .cell.contain-75-right {
+      padding-right: 81.5px;
       margin-right: -75px; }
-    .mosaic-row .cell.share-right-100 {
-      padding-right: 100px;
+    .mosaic-row .cell.contain-100-right {
+      padding-right: 106.5px;
       margin-right: -100px; }
-    .mosaic-row .cell.share-right-125 {
-      padding-right: 125px;
+    .mosaic-row .cell.contain-125-right {
+      padding-right: 131.5px;
       margin-right: -125px; }
-    .mosaic-row .cell.share-right-150 {
-      padding-right: 150px;
+    .mosaic-row .cell.contain-150-right {
+      padding-right: 156.5px;
       margin-right: -150px; }
-    .mosaic-row .cell.share-right-175 {
-      padding-right: 175px;
+    .mosaic-row .cell.contain-175-right {
+      padding-right: 181.5px;
       margin-right: -175px; }
-    .mosaic-row .cell.share-right-200 {
-      padding-right: 200px;
+    .mosaic-row .cell.contain-200-right {
+      padding-right: 206.5px;
       margin-right: -200px; }
-    .mosaic-row .cell.share-right-225 {
-      padding-right: 225px;
+    .mosaic-row .cell.contain-225-right {
+      padding-right: 231.5px;
       margin-right: -225px; }
-    .mosaic-row .cell.share-right-250 {
-      padding-right: 250px;
+    .mosaic-row .cell.contain-250-right {
+      padding-right: 256.5px;
       margin-right: -250px; }
-    .mosaic-row .cell.share-right-275 {
-      padding-right: 275px;
+    .mosaic-row .cell.contain-275-right {
+      padding-right: 281.5px;
       margin-right: -275px; }
-    .mosaic-row .cell.share-right-300 {
-      padding-right: 300px;
+    .mosaic-row .cell.contain-300-right {
+      padding-right: 306.5px;
       margin-right: -300px; }
-    .mosaic-row .cell.share-right-325 {
-      padding-right: 325px;
+    .mosaic-row .cell.contain-325-right {
+      padding-right: 331.5px;
       margin-right: -325px; }
-    .mosaic-row .cell.share-right-350 {
-      padding-right: 350px;
+    .mosaic-row .cell.contain-350-right {
+      padding-right: 356.5px;
       margin-right: -350px; }
-    .mosaic-row .cell.share-right-375 {
-      padding-right: 375px;
+    .mosaic-row .cell.contain-375-right {
+      padding-right: 381.5px;
       margin-right: -375px; }
-    .mosaic-row .cell.share-right-400 {
-      padding-right: 400px;
+    .mosaic-row .cell.contain-400-right {
+      padding-right: 406.5px;
       margin-right: -400px; }
   @media screen and (max-width: 480px) {
     .mosaic-row.stack-480:before {
       content: none; }
     .mosaic-row.stack-480 > .cell {
       width: 100%; }
-    .mosaic-row.stack-480 > .cell[class*="left-"] {
+    .mosaic-row.stack-480 > .cell[class*="contain-"] {
       margin-left: 0;
-      padding-left: 0; }
-    .mosaic-row.stack-480 > .cell[class*="right-"] {
+      padding-left: 6.5px;
       margin-right: 0;
-      padding-right: 0; } }
+      padding-right: 6.5px; } }
   @media screen and (max-width: 767px) {
     .mosaic-row.stack-767:before {
       content: none; }
     .mosaic-row.stack-767 > .cell {
       width: 100%; }
-    .mosaic-row.stack-767 > .cell[class*="left-"] {
+    .mosaic-row.stack-767 > .cell[class*="contain-"] {
       margin-left: 0;
-      padding-left: 0; }
-    .mosaic-row.stack-767 > .cell[class*="right-"] {
+      padding-left: 6.5px;
       margin-right: 0;
-      padding-right: 0; } }
+      padding-right: 6.5px; } }
   @media screen and (max-width: 960px) {
     .mosaic-row.stack-960:before {
       content: none; }
     .mosaic-row.stack-960 > .cell {
       width: 100%; }
-    .mosaic-row.stack-960 > .cell[class*="left-"] {
+    .mosaic-row.stack-960 > .cell[class*="contain-"] {
       margin-left: 0;
-      padding-left: 0; }
-    .mosaic-row.stack-960 > .cell[class*="right-"] {
+      padding-left: 6.5px;
       margin-right: 0;
-      padding-right: 0; } }
+      padding-right: 6.5px; } }

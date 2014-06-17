@@ -5,7 +5,7 @@
   <div class="cell cell-12 middle">
     <h2>A better reason to grid!</h2>
     <p>
-      Mosaic is a 12-column Pure CSS Grid System for vertical alignment and mixed fluid/fixed column widths
+      Mosaic is a Pure CSS 12-column Grid System for vertical alignment. It also allows for mixed fluid/fixed column widths
     </p>
   </div>
   <a href="http://www.fillmurray.com/" class="fill-link" target="_blank">Images from fillmurray.com</a>
@@ -241,10 +241,10 @@
     <section class="code">
       <xmp class="prettyprint">
 <div class="mosaic-row">
-  <div class="cell cell-fixed-200">
+  <div class="cell fixed-200">
     fixed
   </div>
-  <div class="cell share-left-200 cell-6">
+  <div class="cell contain-200-left cell-6">
     &lt;- 50% shared
   </div>
   <div class="cell cell-6">
@@ -261,20 +261,20 @@
 
     <section class="code">
       <xmp class="prettyprint">
-  <div class="mosaic-row">
-    <div class="cell cell-fixed-100">
+  <div class="mosaic-row stack-767">
+    <div class="cell fixed-100">
       fixed
     </div>
-    <div class="cell share-left-100 share-right-100 cell-6">
+    <div class="cell contain-100-left contain-100-right cell-6">
       &lt;- 50% shared -&gt;
     </div>
-    <div class="cell cell-fixed-100">
+    <div class="cell fixed-100">
       fixed
     </div>
-    <div class="cell share-right-200 cell-6">
+    <div class="cell  contain-200-right cell-6">
       50% shared -&gt;
     </div>
-    <div class="cell cell-fixed-200">
+    <div class="cell fixed-200">
       fixed
     </div>
   </div>

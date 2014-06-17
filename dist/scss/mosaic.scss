@@ -111,29 +111,29 @@ $break-points: (480, 767, 960);
     }
 
     /* These fixed columns need to display over any cell the overlap */
-    &[class*="cell-fixed-"]{
+    &[class*="fixed-"]{
       z-index: 1;
     }
 
     // generate fixed columns
     @for $i from 1 through 16 {
-      &.cell-fixed-#{$i * $fixed-multiple}{
+      &.fixed-#{$i * $fixed-multiple}{
         width: ($i * $fixed-multiple)+px;
       }
     }
 
     // generate shared left offsets
     @for $i from 1 through 16 {
-      &.share-left-#{$i * $fixed-multiple}{
-        padding-left: ($i * $fixed-multiple)+px;
+      &.contain-#{$i * $fixed-multiple}-left{
+        padding-left: ($i * $fixed-multiple)+($gutter/2);
         margin-left: -($i * $fixed-multiple)+px;
       }
     }
 
     // generate shared right offsets
     @for $i from 1 through 16 {
-      &.share-right-#{$i * $fixed-multiple}{
-        padding-right: ($i * $fixed-multiple)+px;
+      &.contain-#{$i * $fixed-multiple}-right{
+        padding-right: ($i * $fixed-multiple)+($gutter/2);
         margin-right: -($i * $fixed-multiple)+px;
       }
     }
@@ -151,14 +151,11 @@ $break-points: (480, 767, 960);
           width: 100%;
         }
 
-        & > .cell[class*="left-"]{
+        & > .cell[class*="contain-"]{
           margin-left: 0;
-          padding-left: 0;
-        }
-
-        & > .cell[class*="right-"]{
+          padding-left: $gutter / 2;
           margin-right: 0;
-          padding-right: 0;
+          padding-right: $gutter / 2;
         }
       }
     }

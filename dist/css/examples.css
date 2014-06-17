@@ -113,17 +113,24 @@ main {
 .mosaic-row .cell {
   font-size: 1.5rem; }
 
-.example .cell {
-  color: #fff;
-  background-color: #00B4CC; }
-  .example .cell:nth-child(even) {
-    background-color: #008C9E; }
+.example-wrapper {
+  margin-bottom: 34px; }
+  @media screen and (min-width: 768px) {
+    .example-wrapper {
+      margin-bottom: 55px; } }
+  .example-wrapper .cell {
+    color: #fff;
+    background-color: #00B4CC; }
+    .example-wrapper .cell:nth-child(even) {
+      background-color: #008C9E; }
 
 code {
   color: #008C9E; }
 
 .grid-system {
   text-align: center; }
+  .grid-system .mosaic-row {
+    margin-bottom: 10px; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #008C9E; }
