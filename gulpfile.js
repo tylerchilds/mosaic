@@ -16,11 +16,9 @@ var uglify = require('gulp-uglify');
 // Compile Our Sass
 gulp.task('sass', function() {
     gulp.src('src/scss/mosaic.scss')
-        .pipe(gulp.dest('./dist/scss'))
         .pipe(sass())
         .pipe(rename('mosaic.css'))
         .pipe(gulp.dest('./dist/css'))
-        .pipe(gulp.dest('./'))
         .pipe(minify())
         .pipe(rename('mosaic.min.css'))
         .pipe(gulp.dest('./dist/css'))
@@ -75,7 +73,6 @@ gulp.task('js', function() {
 gulp.task('clean', function() {
     var stream = gulp.src([
             'dist',
-            'mosaic.css',
             'mosaic.min.css'
         ])
         .pipe(clean({force: true}));

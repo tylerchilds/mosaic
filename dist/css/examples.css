@@ -88,21 +88,28 @@ header {
     color: #fff; }
   .hero p {
     font-size: 1.8rem; }
-  .hero .fill-link {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    color: #edeeee;
-    font-size: 1.2rem;
-    opacity: 0.5; }
-    .hero .fill-link:hover {
-      opacity: 0.75; }
 
 main {
   padding: 34px 13px; }
   @media screen and (min-width: 768px) {
     main {
       padding: 55px 34px; } }
+
+.downloads .cell {
+  padding: 0 10px;
+  margin-bottom: 20px; }
+  @media screen and (min-width: 768px) {
+    .downloads .cell {
+      padding: 20px; } }
+.downloads .download-link {
+  text-decoration: none;
+  display: block;
+  padding: 13px;
+  background-color: #008C9E; }
+  .downloads .download-link:link, .downloads .download-link:visited, .downloads .download-link:hover, .downloads .download-link:focus {
+    color: #fff; }
+  .downloads .download-link:hover {
+    background-color: #007785; }
 
 .alignment-grid {
   height: 100px; }
