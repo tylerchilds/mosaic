@@ -95,22 +95,6 @@ main {
     main {
       padding: 55px 34px; } }
 
-.downloads .cell {
-  padding: 0 10px;
-  margin-bottom: 20px; }
-  @media screen and (min-width: 768px) {
-    .downloads .cell {
-      padding: 20px; } }
-.downloads .download-link {
-  text-decoration: none;
-  display: block;
-  padding: 13px;
-  background-color: #008C9E; }
-  .downloads .download-link:link, .downloads .download-link:visited, .downloads .download-link:hover, .downloads .download-link:focus {
-    color: #fff; }
-  .downloads .download-link:hover {
-    background-color: #007785; }
-
 .alignment-grid {
   height: 100px; }
 
