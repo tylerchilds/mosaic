@@ -6,7 +6,7 @@
 
 	<title>{% block title %}Mosaic | CSS Grid Framework with vertical centering and fixed columns{% endblock %}</title>
 	{% block css %}
-	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/base.min.css">
 	<link rel="stylesheet" href="css/mosaic.css">
 	<link rel="stylesheet" href="css/examples.css">
 	{% endblock %}
@@ -20,11 +20,8 @@
 	{% block hero %}
 	{% endblock %}
 	<main>
-		<section class="mosaic-row stack-767">
-			<nav class="cell fixed-200">
-				Nav
-			</nav>
-			<article class="cell cell-12 contain-200-left">
+		<section class="mosaic-row">
+			<article class="cell cell-12">
 				{% block content %}{% endblock %}
 			</article>
 		</section>

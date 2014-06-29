@@ -26,14 +26,6 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('./dist/css'))
         .pipe(gulp.dest('./'));
 
-    gulp.src('src/scss/base.scss')
-        .pipe(sass())
-        .pipe(rename('base.css'))
-        .pipe(gulp.dest('./dist/css'))
-        .pipe(minify())
-        .pipe(rename('base.min.css'))
-        .pipe(gulp.dest('./dist/css'));
-
     var stream = gulp.src('src/scss/examples.scss')
         .pipe(sass())
         .pipe(rename('examples.css'))
@@ -49,6 +41,14 @@ gulp.task('sass', function() {
 gulp.task('swig', function(){
     var stream = gulp.src('src/html/**/*.html')
         .pipe(swig())
+        .pipe(gulp.dest('./dist'));
+
+    return stream;
+});
+
+// Move vendor files to dest
+gulp.task('vendor', function(){
+    var stream = gulp.src('src/vendor/**/*.*')
         .pipe(gulp.dest('./dist'));
 
     return stream;
@@ -91,4 +91,4 @@ gulp.task('watch', function() {
 });
 
 // Default Task
-gulp.task('default', ['sass', 'swig', 'js', 'watch']);
+gulp.task('default', ['sass', 'swig', 'vendor', 'js', 'watch']);
