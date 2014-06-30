@@ -15,7 +15,7 @@
 
   <h3>Basic layout</h3>
   <p>
-    Start out with a <code>&lt;div class="mosaic-row"&gt;&lt;/div&gt;</code> and nest three children with <code>class="cell cell-4"</code>. The grid system is based on the classes <code>.cell-{{#}}</code>, where {{#}} is a value 1-12, but you don't have to use the built-in grid. However, a width needs to be set on <code>.cell</code> elements for the alignment properties to apply.
+    Start out with a <code>&lt;div class="mosaic-row"&gt;&lt;/div&gt;</code> and nest three children with <code>class="cell cell-4"</code>. The grid system is based on the classes <code>.cell-#</code>, where # is a value 1-12, but you don't have to use the built-in grid. However, a width needs to be set on <code>.cell</code> elements for the alignment properties to apply.
   </p>
 
   <section class="example-wrapper">
@@ -67,7 +67,7 @@
 
   <h3>Responsive Rows</h3>
   <p>
-    Cells in a row can be stacked at various viewport thresholds to optimize layouts responsively. Just add <code>class="stack-{{#}}"</code>, where {{#}} by default is 480, 767, and 960.
+    Cells in a row can be stacked at various viewport thresholds to optimize layouts responsively. Just add <code>class="stack-#"</code>, where # by default is 480, 767, and 960.
   </p>
 
   <section class="example-wrapper">
@@ -276,7 +276,7 @@
 
   <h3>Mixed Fixed/Fluid Columns</h3>
   <p>
-    Fluid cells are able to contain fixed sized cells. Fixed cells can be positioned on either side of their shared fluid cell. Cells can be given a fixed width with <code>.fixed-{{#}}</code>, where {{#}} by default is a multiple of 25 less than 400. Fluid cells can contain fixed cells by adding <code>.contain-{{#}}-{{side}}</code>, where {{#}} is the width of the fixed column to be contained and {{side}} is "left" or "right", the side on which the fixed element is located.
+    Fluid cells are able to contain fixed sized cells. Fixed cells can be positioned on either side of their shared fluid cell. Cells can be given a fixed width with <code>.fixed-#</code>, where # by default is a multiple of 25 less than 400. Fluid cells can contain fixed cells by adding <code>.contain-#-side</code>, where # is the width of the fixed column to be contained and "side" is "left" or "right", the side on which the fixed element is located.
   </p>
   <section class="example-wrapper">
     <section class="example grid-system"></section>
@@ -325,7 +325,7 @@
 
   <h3>Push, pull, &amp; More</h3>
   <p>
-    Because elements are not floated, push/pull classes may seem like they have unexpected results. To push/pull add <code>.push-{{#}}</code> or <code>pull-{{#}}</code>, where {{#}} is a value 1-12. To align cells in their row, alignment classes also can be used if the row does not add up to 12.
+    Because elements are not floated, push/pull classes may seem like they have unexpected results. To push/pull add <code>.push-#</code> or <code>pull-#</code>, where # is a value 1-12. To align cells in their row, alignment classes also can be used if the row does not add up to 12.
   </p>
 
   <section class="example-wrapper">
