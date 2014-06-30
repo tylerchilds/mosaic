@@ -323,9 +323,9 @@
     <aside class="code-toggle"></aside>
   </section>
 
-  <h3>Push &amp; More</h3>
+  <h3>Push, pull, &amp; More</h3>
   <p>
-    Because elements are not floated, pull classes aren't needed. To push add <code>.push-{{#}}</code>, where {{#}} is a value 1-12. To align cells in their row, alignment classes also can be used if the row does not add up to 12.
+    Because elements are not floated, push/pull classes may seem like they have unexpected results. To push/pull add <code>.push-{{#}}</code> or <code>pull-{{#}}</code>, where {{#}} is a value 1-12. To align cells in their row, alignment classes also can be used if the row does not add up to 12.
   </p>
 
   <section class="example-wrapper">
@@ -335,10 +335,16 @@
       <xmp class="prettyprint">
 <div class="mosaic-row">
   <div class="cell cell-4">
-    First
+    Normal
   </div>
   <div class="cell cell-4 push-4">
-    Last
+    Pushed
+  </div>
+</div>
+
+<div class="mosaic-row right">
+  <div class="cell cell-9 pull-1 left">
+    Pulled, text left
   </div>
 </div>
 

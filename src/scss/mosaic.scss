@@ -99,7 +99,14 @@ $break-points: (480, 767, 960);
     // generate push offsets
     @for $i from 1 through 12 {
       &.push-#{$i}{
-        margin-left: ($i / 12 * 100%);
+        left: ($i / 12 * 100%);
+      }
+    }
+
+    // generate pull offsets
+    @for $i from 1 through 12 {
+      &.pull-#{$i}{
+        left: -($i / 12 * 100%);
       }
     }
 
