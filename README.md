@@ -8,6 +8,6 @@ Mosaic is another grid system that addresses a couple large issues currently pla
 Getting Started
 ---------------
 
-1. Download [mosaic.min.css](https://raw.github.com/tylerchilds/mosaic/master/css/mosaic.min.css)
+1. Download [mosaic.min.css](https://raw.githubusercontent.com/tylerchilds/mosaic/master/mosaic.min.css)
 2. Add `<link rel="stylesheet" href="mosaic.min.css">` to your html
 3. Check out the [documentation](http://tylerchilds.github.io/mosaic/) for usage examples.
