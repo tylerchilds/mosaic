@@ -103,13 +103,6 @@ $break-points: (480, 767, 960);
       }
     }
 
-    // generate pull offsets
-    @for $i from 1 through 12 {
-      &.pull-#{$i}{
-        margin-left: -($i / 12 * 100%);
-      }
-    }
-
     /* These fixed columns need to display over any cell the overlap */
     &[class*="fixed-"]{
       z-index: 1;

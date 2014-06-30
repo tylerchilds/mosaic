@@ -109,30 +109,6 @@
       margin-left: 91.66667%; }
     .mosaic-row .cell.push-12 {
       margin-left: 100%; }
-    .mosaic-row .cell.pull-1 {
-      margin-left: -8.33333%; }
-    .mosaic-row .cell.pull-2 {
-      margin-left: -16.66667%; }
-    .mosaic-row .cell.pull-3 {
-      margin-left: -25%; }
-    .mosaic-row .cell.pull-4 {
-      margin-left: -33.33333%; }
-    .mosaic-row .cell.pull-5 {
-      margin-left: -41.66667%; }
-    .mosaic-row .cell.pull-6 {
-      margin-left: -50%; }
-    .mosaic-row .cell.pull-7 {
-      margin-left: -58.33333%; }
-    .mosaic-row .cell.pull-8 {
-      margin-left: -66.66667%; }
-    .mosaic-row .cell.pull-9 {
-      margin-left: -75%; }
-    .mosaic-row .cell.pull-10 {
-      margin-left: -83.33333%; }
-    .mosaic-row .cell.pull-11 {
-      margin-left: -91.66667%; }
-    .mosaic-row .cell.pull-12 {
-      margin-left: -100%; }
     .mosaic-row .cell[class*="fixed-"] {
       z-index: 1; }
     .mosaic-row .cell.fixed-25 {
