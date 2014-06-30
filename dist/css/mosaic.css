@@ -264,30 +264,27 @@
       padding-right: 406.5px;
       margin-right: -400px; }
   @media screen and (max-width: 480px) {
-    .mosaic-row.stack-480:before {
-      content: none; }
     .mosaic-row.stack-480 > .cell {
-      width: 100%; }
+      width: 100%;
+      left: 0; }
     .mosaic-row.stack-480 > .cell[class*="contain-"] {
       margin-left: 0;
       padding-left: 6.5px;
       margin-right: 0;
       padding-right: 6.5px; } }
   @media screen and (max-width: 767px) {
-    .mosaic-row.stack-767:before {
-      content: none; }
     .mosaic-row.stack-767 > .cell {
-      width: 100%; }
+      width: 100%;
+      left: 0; }
     .mosaic-row.stack-767 > .cell[class*="contain-"] {
       margin-left: 0;
       padding-left: 6.5px;
       margin-right: 0;
       padding-right: 6.5px; } }
   @media screen and (max-width: 960px) {
-    .mosaic-row.stack-960:before {
-      content: none; }
     .mosaic-row.stack-960 > .cell {
-      width: 100%; }
+      width: 100%;
+      left: 0; }
     .mosaic-row.stack-960 > .cell[class*="contain-"] {
       margin-left: 0;
       padding-left: 6.5px;

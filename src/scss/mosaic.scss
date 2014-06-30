@@ -143,12 +143,10 @@ $break-points: (480, 767, 960);
   @each $threshold in $break-points{
     @media screen and (max-width: ($threshold)+px){
       &.stack-#{$threshold}{
-        &:before {
-          content: none;
-        }
 
         & > .cell{
           width: 100%;
+          left: 0;
         }
 
         & > .cell[class*="contain-"]{
